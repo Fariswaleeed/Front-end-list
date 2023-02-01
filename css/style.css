@@ -1,0 +1,76 @@
+/*******reset*********/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+img {
+    width: 100% ;
+}
+ol,ul {
+    list-style: none;
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%);
+}
+@font-face {
+    font-family: outfit;
+    src: url(../fonts/Outfit-Regular.ttf);
+    font-weight:  700;
+}
+@font-face {
+    font-family: outfit;
+    src: url(../fonts/Outfit-Bold.ttf);
+    font-weight:  700;
+}
+body {
+    text-align: center;
+    background-color: var(--Light-gray);
+    font-size: 15px;
+    font-family: outfit;
+    min-height: 100vh;
+}
+main {
+    background-color: var(--White);
+    width: 87%;
+    border-radius: 0.625em;
+    padding: 15px;
+    margin: 60px auto   ;
+    -webkit-border-radius:0.625em;
+    -moz-border-radius:0.625em;
+    -ms-border-radius:0.625em;
+    -o-border-radius:0.625em;
+}
+main img {    
+border-radius: 0.425em;
+-webkit-border-radius:0.425em;
+-moz-border-radius:0.425em;
+-ms-border-radius:0.425em;
+-o-border-radius:0.425em;
+}
+main h1 {
+    color: var(--Dark-blue);
+font-size: 1.5em;
+margin-bottom: 0.7em;
+}
+main p {
+    color: var(--Grayish-blue);
+padding: 0.5em;
+}
+@media screen and (min-width:768px) {
+    main {
+        width: 60%;
+}
+    }
+@media screen and (min-width:900px) {
+    main {
+        width: 30%;
+    }
+}
